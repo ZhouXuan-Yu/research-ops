@@ -1,0 +1,10 @@
+# generated whitelist output — do not edit by hand
+*.bak
+*.tmp
+_scan_*.txt
+receipts/
+node_modules/
+__pycache__/
+*.pyc
+.vscode/
+.DS_Store
