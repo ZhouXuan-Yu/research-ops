@@ -40,3 +40,7 @@ node tools/litsearch.mjs --queries "bamboo slip restoration" --rows 15 --out out
 ## 注意
 
 本仓库由本机白名单构建脚本生成，**不要在这里直接改文件**——改了下次构建会被覆盖。要改请改源工作区，然后重新构建。
+
+## 自动同步
+
+每天 18:00 由 Windows 计划任务 `Research-Ops-DailyPush` 自动执行：白名单构建 → 敏感词扫描 → 提交 → 推送。日志在 `_automation\logs\ops-daily-push.log`。构建或扫描失败时不会提交，也不会推送。
